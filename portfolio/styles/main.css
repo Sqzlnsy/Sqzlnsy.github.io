@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Righteous&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Righteous&display=swap');
+
+:root {
+    --light-color:#7EA1BF;
+    --body-color:#132F40;
+    --heading-color:#456B8C;
+    --contrast-color:#cea8bc;
+
+    --vertical-space: 50px;
+}
+
+.subtitle{
+    margin-top: 3vh;
+}
+
+section{
+    padding-top: var(--vertical-space);
+    margin-bottom: 2em;
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+
+#intro{
+    background: url("https://static.wikia.nocookie.net/fastandfurious/images/0/03/Tokyo_Japan.jpg/revision/latest/scale-to-width-down/900?cb=20150501095238")
+                center center no-repeat fixed;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    margin: 0 0;
+}
+
+nav.navbar {
+    background-color:#E6F3FF;
+}
+
+.navbar-brand {
+    font-family: 'Righteous', cursive;
+    padding: 0;
+    font-size: 25px;
+}
+
+#icon {
+    height: 15em;
+    margin-top: 10vh;
+    margin-bottom: 11vh;
+}
+
+#intro h1{
+    margin-bottom: 19vh;
+}
+
+#about img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#selfie{
+    margin-top: 5vh;
+}
+
+#selfIntro{
+    margin-top: 5vh;
+}
+
+h2, h3, h4{
+    line-height: 1.2;
+    font-family: 'Righteous', cursive;
+    color:var(--heading-color);
+}
+
+#projectContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5vh 5vw;
+    justify-content: center;
+}
+
+.fitem{
+    flex-basis: 85%;
+    margin-right: 5%;
+    margin-right: 5%;
+}
+
+.fitem img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30%;
+}
+
+
+@media (min-width: 576px) {
+    .fitem{
+        flex-basis: 42%;
+    }
+}
+
+@media (min-width: 992px) {
+    .fitem {
+        flex-basis: 28%;
+    }
+}
