@@ -14,7 +14,7 @@
         <nav class="navbar navbar-expand-sm fixed-top">
           <div class="container"><a href="#intro" class="navbar-brand scrollTo">Qizhe Su</a>
             <button type="button" data-toggle="collapse" data-target="#navbarcollapse" class="navbar-toggler navbar-toggler-right">
-                <span class="navbar-toggler-icon"></span>
+             <span><img id="navicon" src="images/menu_black_24dp.svg"></span>
             </button>
             <div id="navbarcollapse" class="collapse navbar-collapse">
               <ul class="navbar-nav ml-auto">
@@ -29,9 +29,12 @@
       <!--Intro-->
       <section id="intro">
         <div class="container text-center">
-          <div><img id="icon" src="images/favicon.png"></div>
+          <div><img id="icon" src="images/avataaars.png"></div>
           <h1>Hello, hola, 您好!</h1>
-          <p>I grind HTML and CSS and then weld them with PHP into beautiful and efficient websites.</p>
+          <p>I am an Electrical Engineer who also love to design website.</p>
+          </div>
+          <div style="font-size: xx-small;">
+            Photo by <a href="https://unsplash.com/@olenkasergienko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olena Sergienko</a> on <a href="https://unsplash.com/s/photos/desk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
           </div>
       </section>
       <!--About-->
@@ -41,7 +44,8 @@
         </header>
         <div class="row">
             <div id="selfie" class="col-lg-5">
-                <img src="images\self.jpg">
+                <img style="display: block; margin-left: auto;
+                margin-right: auto;" src="images\self.jpg" alt="A photo of me">
             </div>
           <div id="selfIntro" class="col-lg-7">
             <p>
@@ -54,30 +58,49 @@
       </section>
       <!--Portfolio-->
       <section id="portfolio">
-        <h2>Portfolio</h2>
+        <h2 class="subtitle">Portfolio</h2>
         <div id="projectContainer">
-            <div class="fitem">
-                <h3>Project Name</h3>
-                <img src="images/project.jpg">
+            <div data-index="0" class="fitem">
+              <div class="project" id="RoseGPE">
+                  <h3>Rose GPE</h3>
+                  <div>
+                    <p>I work on the electrical system and participated on the design of steering wheel for Model RGP009</p>
+                    <a target="_blank" href="https://www.facebook.com/RoseGPE/">Read more</a>
+                  </div>
+              </div>
             </div>
-            <div class="fitem">
-                <h3>Project Name</h3>
-                <img src="images/project.jpg">
+            <div data-index="1" class="fitem">
+              <div class="project" id="PortWeb">
+                  <h3>Portfolio Website</h3>
+                  <div>  
+                    <p>hdkbadjkabd</p>
+                    <a target="_blank" href="#">Read more</a>
+                    </div>
+              </div>
             </div>
-            <div class="fitem">
-                <h3>Project Name</h3>
-                <img src="images/project.jpg">
+            <div data-index="2" class="fitem">
+              <div class="project">
+                  <h3>Project Name</h3>
+                  <div>  
+                    <p>Lorem ipsum dolor sit amet, ea pertinax nominati dignissim pri. Pri mucius officiis perfecto ex.</p>
+                    <a href="#">Read more</a>
+                  </div>
+              </div>
             </div>
-            <div class="fitem">
+            <div data-index="3" class="fitem">
+              <div class="project">
                 <h3>Project Name</h3>
-                <img src="images/project.jpg">
+                <div>  
+                  <p>Tota debet quaeque mea in. Cu vis agam movet, ex mel minim incorrupte consequuntur.</p>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
             </div>
         </div>
     </body>
   </section>
     <footer>
-       Contact me at suq@rose-hulman.edu
-    </footer>
+       Contact me at <span id="emailAddress">suq@rose-hulman.edu <img src="images/outline_send_black_24dp.png"></span>
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/popper.js"></script>
     <script src="scripts/bootstrap-material-design.js"></script>
