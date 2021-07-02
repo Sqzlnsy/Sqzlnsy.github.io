@@ -1,1 +1,0 @@
-# Sqzlnsy.github.io

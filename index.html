@@ -4,63 +4,107 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Qizhe Su's Personal Website</title>
+    <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="icon" href="images/favicon.png" />
-  </head>
-  <section id = "about">
-    <body id = "about">
+    </head>
+    <body>
       <header>
-        <h1>Qizhe Su</h1>
+        <nav class="navbar navbar-expand-sm fixed-top">
+          <div class="container"><a href="#intro" class="navbar-brand scrollTo">Qizhe Su</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarcollapse" class="navbar-toggler navbar-toggler-right">
+             <span><img id="navicon" src="images/menu_black_24dp.svg"></span>
+            </button>
+            <div id="navbarcollapse" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href = "#about" class="nav-link link-scroll">About</a></li>
+                <li class="nav-item"><a href = "#portfolio" class="nav-link link-scroll">Portfolio</a></li>
+                <li class="nav-item"><a href = "resume.html" class="nav-link link-scroll">Resume</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </header>
-      <nav>
-          <ul>
-              <li><a href = "index.html">About</a></li>
-              <li><a href = "portfolio.html">Portfolio</a></li>
-              <li><a href = "resume.html">Resume</a></li>
-          </ul>
-      </nav>
-      <!-- Your content goes here -->
-      <main>
-          <h1>About</h1>
-          <img src = "https://static.wikia.nocookie.net/fastandfurious/images/0/03/Tokyo_Japan.jpg/revision/latest/scale-to-width-down/900?cb=20150501095238">
-          <p>
+      <!--Intro-->
+      <section id="intro">
+        <div class="container text-center">
+          <div><img id="icon" src="images/avataaars.png"></div>
+          <h1>Hello, hola, 您好!</h1>
+          <p>I am an Electrical Engineer who also love to design website.</p>
+          </div>
+          <div style="font-size: xx-small;">
+            Photo by <a href="https://unsplash.com/@olenkasergienko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olena Sergienko</a> on <a href="https://unsplash.com/s/photos/desk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </div>
+      </section>
+      <!--About-->
+      <section id="about">
+        <header>
+            <h2 class="subtitle">About me</h2>
+        </header>
+        <div class="row">
+            <div id="selfie" class="col-lg-5">
+                <img style="display: block; margin-left: auto;
+                margin-right: auto;" src="images\self.jpg" alt="A photo of me">
+            </div>
+          <div id="selfIntro" class="col-lg-7">
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus integer feugiat scelerisque varius morbi enim. Est ullamcorper eget nulla facilisi. Et malesuada fames ac turpis egestas maecenas pharetra. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Morbi tempus iaculis urna id volutpat lacus. Ultrices dui sapien eget mi proin. Sit amet purus gravida quis blandit turpis cursus in hac. Mi tempus imperdiet nulla malesuada pellentesque. Nunc lobortis mattis aliquam faucibus. Ut eu sem integer vitae justo. Quis blandit turpis cursus in hac habitasse platea dictumst.
-          </p>
-          <p>
+            </p>
+            <p>
               Integer eget aliquet nibh praesent tristique magna sit amet purus. Netus et malesuada fames ac turpis. Elit duis tristique sollicitudin nibh sit amet commodo. Ut consequat semper viverra nam. Odio aenean sed adipiscing diam. Pulvinar neque laoreet suspendisse interdum. Erat nam at lectus urna duis. Donec adipiscing tristique risus nec feugiat in fermentum posuere urna. Est lorem ipsum dolor sit amet consectetur. Tortor at auctor urna nunc.
-          </p>
-      </main>
-    </body>
-  </section>
-  <section id="portfolio">
-    <body id = "portfolio">
-      <!-- Your content goes here -->
-      <header>
-          <h1>Qizhe Su</h1>
-      </header>
-      <nav>
-          <ul>
-              <li><a href = "index.html">About</a></li>
-              <li><a href = "portfolio.html">Portfolio</a></li>
-              <li><a href = "resume.html">Resume</a></li>
-          </ul>
-      </nav>
-      <main>
-          <h1>Portfolio</h1>
-          <ul id="portfolioItems">
-              <li>
-                  <h2><a href = "#">Project Name</a></h2>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci eu lobortis elementum nibh tellus molestie nunc non. Vitae tempus quam pellentesque nec nam.
-                  </p>
-              </li>
-          </ul>
-      </main>
+            </p>
+          </div>
+      </section>
+      <!--Portfolio-->
+      <section id="portfolio">
+        <h2 class="subtitle">Portfolio</h2>
+        <div id="projectContainer">
+            <div data-index="0" class="fitem">
+              <div class="project" id="RoseGPE">
+                  <h3>Rose GPE</h3>
+                  <div>
+                    <p>I work on the electrical system and participated on the design of steering wheel for Model RGP009</p>
+                    <a target="_blank" href="https://www.facebook.com/RoseGPE/">Read more</a>
+                  </div>
+              </div>
+            </div>
+            <div data-index="1" class="fitem">
+              <div class="project" id="PortWeb">
+                  <h3>Portfolio Website</h3>
+                  <div>  
+                    <p>hdkbadjkabd</p>
+                    <a target="_blank" href="#">Read more</a>
+                    </div>
+              </div>
+            </div>
+            <div data-index="2" class="fitem">
+              <div class="project">
+                  <h3>Project Name</h3>
+                  <div>  
+                    <p>Lorem ipsum dolor sit amet, ea pertinax nominati dignissim pri. Pri mucius officiis perfecto ex.</p>
+                    <a href="#">Read more</a>
+                  </div>
+              </div>
+            </div>
+            <div data-index="3" class="fitem">
+              <div class="project">
+                <h3>Project Name</h3>
+                <div>  
+                  <p>Tota debet quaeque mea in. Cu vis agam movet, ex mel minim incorrupte consequuntur.</p>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+        </div>
     </body>
   </section>
     <footer>
-       Contact me at suq@rose-hulman.edu
-    </footer>
+       Contact me at <span id="emailAddress">suq@rose-hulman.edu <img src="images/outline_send_black_24dp.png"></span>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.js"></script>
+    <script src="scripts/bootstrap-material-design.js"></script>
+    <script>$("body").bootstrapMaterialDesign();</script>
+    <script src="scripts/main.js"></script>
     <script src="scripts/main.js"></script>
 </html>

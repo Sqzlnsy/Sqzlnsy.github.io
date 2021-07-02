@@ -4,40 +4,48 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Qizhe Su's Resume</title>
+    <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="icon" href="images/favicon.png" />
   </head>
   <body id = "resume">
+      <section>
     <header>
-        <h1>Qizhe Su</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href = "index.html">About</a></li>
-            <li><a href = "portfolio.html">Portfolio</a></li>
-            <li><a href = "resume.html">Resume</a></li>
-        </ul>
-    </nav>
+        <nav class="navbar navbar-expand-sm fixed-top">
+          <div class="container"><a href="index.html#intro" class="navbar-brand scrollTo">Qizhe Su</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarcollapse" class="navbar-toggler navbar-toggler-right">
+                <span><img src="images/menu_black_24dp.svg"></span>
+            </button>
+            <div id="navbarcollapse" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href = "index.html#about" class="nav-link link-scroll">About</a></li>
+                <li class="nav-item"><a href = "index.html#portfolio" class="nav-link link-scroll">Portfolio</a></li>
+                <li class="nav-item"><a href = "resume.html" class="nav-link link-scroll">Resume</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
     <!-- Your content goes here -->
     <main>
-        <h1>Resume</h1>
-        <h2>Objective</h2>
+        <h2 class="subtitle">Resume</h2>
+        <h3>Objective</h3>
         <p>Searching for a summer internship related to the electrical engineering field</p>
-        <h2>Education</h2>
-        <h3>
+        <h3>Education</h3>
+        <h4>
             <span class = "degree">Bachelor of Science, Electrical Engineering May 2023</span>
-        </h3>
+        </h4>
         <ul>
             <li>Rose-Hulman Institute of Technology, Terre Haute, IN GPA: 4.00</li>
         </ul>
         <p><span>Relevant courses:</span> Engineering Practice, DC Circuit, Signal processing</p>
-        <h3>Specialization: Computer Science 2018 - 2020</h3>
+        <h4>Specialization: Computer Science 2018 - 2020</h3>
         <ul>
             <li>The Chinese University of Hong Kong GPA: 3.43 </li>
         </ul>
         <p><span>Relevant courses:</span>Data structure, Software design, Digital system</p>
-        <h2>Skills:</h2>
+        <h3>Skills:</h3>
         <dl>
             <dt></dt>
             <dd>Reading and creating electrical drawings and schematics, Soldering</dd>
@@ -48,7 +56,7 @@
             <dt>Software:</dt>
             <dd>Microsoft Excel & Word, MATLAB, Altium, Arduino, STM32Cube</dd>
         </dl>
-        <h2>Internships:</h2>
+        <h3>Internships:</h3>
         <ul>
             <li>
                 <span class = "employer">Northern United Broadcasting Television Network Corporation</span>
@@ -72,7 +80,7 @@
                 </ul>
             </li>
         </ul>
-        <h2>Honors:</h2>
+        <h3>Honors:</h3>
         <ul>
             <li>Dean's List -- Fall 2020, Winter 2021, Spring 2021</li>
             <li>Rose-Hulman Institute of Technology Global Scholarship Aug 2020</li>
@@ -85,7 +93,7 @@
                 Students First Prize Sep 2017</li>
             <li>Liaoning Province Shiyan High School Outstanding Student Mar 2017</li>
         </ul>
-        <h2>Experience:</h2>
+        <h3>Experience:</h3>
         <ul>
             <li>RHIT Grand Prix Engineering, hardware engineer & steering wheel designer 2020-Current</li>
             <li>Ski and Snowboard club, member 2020-Current</li>
@@ -93,9 +101,15 @@
             <li>CUHK mainland soccer competition, player Oct 2018</li>
         </ul>
     </main>
+    </section>
     <footer>
        Contact me at suq@rose-hulman.edu
     </footer>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.js"></script>
+    <script src="scripts/bootstrap-material-design.js"></script>
+    <script>$("body").bootstrapMaterialDesign();</script>
+    <script src="scripts/main.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
